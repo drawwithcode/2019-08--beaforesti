@@ -33,6 +33,7 @@ function setup() {
 function draw() {
   clear()
 
+  //your position (placeholder + text)
   push()
   var here = myMap.latLngToPixel(position.latitude, position.longitude);
   fill(color(col1));
@@ -41,9 +42,10 @@ function draw() {
   ellipse(here.x, here.y, 30)
   text('Here you are', here.x - 40, here.y - 20);
 
+  //Monte Bianco position (place holder + text)
   var monteBianco = myMap.latLngToPixel(monteBiancoLat, monteBiancoLon);
   img.resize(100, 0);
-  image(img, monteBianco.x - img.width / 2, monteBianco.y - 1.5*img.height);
+  image(img, monteBianco.x - img.width / 2, monteBianco.y - 1.5 * img.height);
   fill(240);
   textSize(30)
   text('Monte Bianco', monteBianco.x - 60, monteBianco.y - 30);
@@ -61,6 +63,6 @@ function draw() {
   fill(240)
   textSize(30)
   textAlign(CENTER)
-  text("There are only " + Math.round(howFar) + "km between you and the top of Europe. Dream higher!", width/2, height-200)
+  text("There are only " + Math.round(howFar) + "km between you and the top of Europe. Dream higher!", width / 2, height - 200)
 
 }
