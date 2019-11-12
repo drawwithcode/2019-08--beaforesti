@@ -10,8 +10,8 @@ var options = {
   lat: poliLat,
   lng: poliLon,
   zoom: 8, //map is centered in the point 0, 0, zoom level 4
-  style: "mapbox://styles/mapbox/navigation-preview-night-v2",
-  // style: "mapbox://styles/beafiore/ck2rncqlt3lrv1cmkf6lw37g9",
+  // style: "mapbox://styles/mapbox/navigation-preview-night-v2",
+  style: "mapbox://styles/beafiore/ck2rncqlt3lrv1cmkf6lw37g9",
 
 }
 
